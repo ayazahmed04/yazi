@@ -1,0 +1,20 @@
+my_scraper/
+│
+├── config/
+│   └── settings.py                 # Global settings for scraper
+│
+├── scraper/
+│   ├── __init__.py
+│   ├── engine.py                   # Main scraping engine (handling requests)
+│   ├── parse.py                    # Parsing logic for extracting data
+│   └── middleware.py               # Middleware for user-agent, proxies, etc.
+│
+├── pipelines/
+│   └── item_pipeline.py            # Item pipeline for processing data
+│
+├── cli/
+│   └── cli.py                      # Command line interface (user input)
+│
+├── main.py                         # Entry point to start the scraper
+│
+└── environment.yml                 # Conda environment setup
